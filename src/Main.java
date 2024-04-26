@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
+        // Первое задание
+
+        System.out.println("\nTask 1 \n");
+
     }
 }
