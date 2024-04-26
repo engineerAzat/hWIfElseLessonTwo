@@ -18,15 +18,17 @@ public class Main {
 
         System.out.println("\nTask 2 \n");
         int clientOSTwo = 1;      // Объявляем переменную clientOSTwo  1 это iOS; 2 это android
-        int clientDeviceYear = 2015;  // Объявляем переменную clientDeviceYear (год выпуска телефона)
+        int clientDeviceYear = 2016;  // Объявляем переменную clientDeviceYear (год выпуска телефона)
         if (clientDeviceYear > 2015 && clientOSTwo == 1) {  // Оператор if выполняется в случае если у оператора iOS и телефон выпущен после 2015 года
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear >= 2015 && clientOSTwo == 2) { // Оператор if выполняется в случае если у оператора android и телефон выпущен 2015 году или ранее
+        } else if (clientDeviceYear > 2015 && clientOSTwo == 2) { // Оператор if выполняется в случае если у оператора android и телефон выпущен 2015 году или ранее
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
-        else if (clientDeviceYear <= 2015 && clientOSTwo = 1) {
-
-
+        } else if (clientDeviceYear <= 2015 && clientOSTwo == 1) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientDeviceYear <= 2015 && clientOSTwo == 2) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Не корректный ввод!");
         }
 
 
